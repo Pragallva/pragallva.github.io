@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Homepage
 permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
@@ -18,11 +18,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+I am a postdoctoral research associate jointly affliated with the Cooperative Institute for Environmental Sciences (CIRES) and the National Oceanic Atmospheric Administration (NOAA), Physical Sciences Lab, Boulder, Colorado. I currently work with Dr. George Kiladis, Stefan Tulich and Juliana Dias. I am generally interested in the fluid dynamics of Earth's atmosphere which I address using simple theory, atmospheric models of varying complexity and reanalysis dataset.
+
+<!-- My general research interests lie in large-scale atmospheric circulation, dynamics of extratropical storm tracks and more recently tropical waves, which I address using a combination of idealized modeling and analyzing reanalysis dataset.  -->
+
+These days I think a lot about what how do the extratropics control Madden Julian Oscillation (MJO), a dominant mode of intraseasonal variability in the Tropics. Check out our new work on the role of subtropical Rossby waves on the MJO [here](https://doi.org/10.1002/essoar.10512829.1)! During my PhD in the University of Chicago, I worked with  Drs. Tiffany Shaw and Noboru Nakamura on the dynamics of midlatitude storm tracks. You can find my [PhD thesis here](http://knowledge.uchicago.edu/record/2556). In the first half of my PhD research, I developed a Moist Static energy framework to understand what factors contribute to stormtrack shifts and intensity changes in response to various forcings from seasonal to centennial timescales. Later I used this framework in combination with an aquaplanet and energy balance model to show how surface fluxes modulate the storm track seasonality. In the second half of my PhD, I used the finite amplitude local-wave activity (FAWA) framework (developed by Prof. Nakamura and his group) to understand how atmosphere blocks will change under hypothetical climate change scenarios and how they currently behave during Northern hemisphere winter. The latter work is in Chapter 4 of my PhD thesis and is being updated for ERA5 data. More updates on this work coming soon.
+
 .... Page under construction ...
-
-I am a postdoctoral research associate jointly affliated with the Cooperative Institute of Environmental Sciences (CIRES) and the National Oceanic Atmospheric Administration (NOAA), Physical Sciences Lab, University of Colorado, Boulder. My general research interests lie in large-scale atmospheric circulation, dynamics of extratropical storm tracks and more recently tropical waves, which I address using a combination of idealized modeling and analyzing reanalysis dataset. 
-
-My current postdoctoral research focuses on tropical-extratropical interaction during Maddel Julian Oscillation. During my PhD in the University of Chicago, I worked with  Drs. Tiffany Shaw and Noboru Nakamura on the dynamics of midlatitude storm tracks. You can find my PhD thesis here. In the first half of my PhD research, I developed a Moist Static energy framework to understand what factors contribute to stormtrack shifts and intensity changes in response to various forcings from seasonal to centennial timescales. Later I used this framework in combination with an aquaplanet and energy balance model to show how surface fluxes modulate the storm track seasonality. In the second half of my PhD, I used the finite amplitude local-wave activity (FAWA) framework (developed by Prof. Nakamura and his group) to understand how atmosphere blocks will change under hypothetical climate change scenarios and how they currently behave during Northern hemisphere winter. 
 
 
 
