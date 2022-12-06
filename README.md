@@ -1,6 +1,6 @@
-# al-folio
+<!-- # al-folio -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[maintainers]: https://img.shields.io/badge/maintainers-3-success.svg 'Number of maintainers'
+<!-- [maintainers]: https://img.shields.io/badge/maintainers-3-success.svg 'Number of maintainers' -->
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- [![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
@@ -491,68 +491,68 @@ Edit the `_data/repositories.yml` and change the `github_users` and `github_repo
 You may also use the following codes for displaying this in any other pages.
 ```
 <!-- code for GitHub users -->
-{% if site.data.repositories.github_users %}
+<!-- {% if site.data.repositories.github_users %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
     {% include repository/repo_user.html username=user %}
   {% endfor %}
 </div>
-{% endif %}
+{% endif %} -->
 
 <!-- code for GitHub repositories -->
-{% if site.data.repositories.github_repos %}
+<!-- {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
     {% include repository/repo.html repository=repo %}
   {% endfor %}
 </div>
-{% endif %}
-```
+{% endif %} -->
+<!-- ``` -->
 
-#### Theming
-A variety of beautiful theme colors have been selected for you to choose from.
+<!-- #### Theming -->
+<!-- A variety of beautiful theme colors have been selected for you to choose from.
 The default is purple, but you can quickly change it by editing the
 `--global-theme-color` variable in the `_sass/_themes.scss` file.
 Other color variables are listed there as well.
 The stock theme color options available can be found at `_sass/variables.scss`.
 You can also add your own colors to this file assigning each a name for ease of
-use across the template.
+use across the template. -->
 
-#### Social media previews
-**al-folio** supports preview images on social media.
+<!-- #### Social media previews -->
+<!-- **al-folio** supports preview images on social media.
 To enable this functionality you will need to set `serve_og_meta` to `true` in your `_config.yml`.
 Once you have done so, all your site's pages will include Open Graph data in the HTML head element.
 
 You will then need to configure what image to display in your site's social media previews.
 This can be configured on a per-page basis, by setting the `og_image` page variable.
 If for an individual page this variable is not set, then the theme will fall back to a site-wide `og_image` variable, configurable in your `_config.yml`.
-In both the page-specific and site-wide cases, the `og_image` variable needs to hold the URL for the image you wish to display in social media previews.
+In both the page-specific and site-wide cases, the `og_image` variable needs to hold the URL for the image you wish to display in social media previews. -->
 
-#### Atom (RSS-like) Feed
+<!-- #### Atom (RSS-like) Feed
 It generates an Atom (RSS-like) feed of your posts, useful for Atom and RSS readers.
 The feed is reachable simply by typing after your homepage `/feed.xml`.
-E.g. assuming your website mountpoint is the main folder, you can type `yourusername.github.io/feed.xml`
+E.g. assuming your website mountpoint is the main folder, you can type `yourusername.github.io/feed.xml` -->
 
-## Contributing
+<!-- ## Contributing
 
 Contributions to al-folio are very welcome!
 Before you get started, please take a look at [the guidelines](CONTRIBUTING.md).
 
 If you would like to improve documentation, add your webpage to the list below, or fix a minor inconsistency or bug, please feel free to send a PR directly to `master`.
-For more complex issues/bugs or feature requests, please open an issue using the appropriate template. -->
+For more complex issues/bugs or feature requests, please open an issue using the appropriate template. --> -->
 
-### Maintainers
+<!-- ### Maintainers -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<table>
+<!-- <table>
   <tr>
     <td align="center"><a href="http://maruan.alshedivat.com"><img src="https://avatars.githubusercontent.com/u/2126561?v=4" width="100px;" alt=""/><br /><sub><b>Maruan</b></sub></a></td>
     <td align="center"><a href="http://rohandebsarkar.github.io"><img src="https://avatars.githubusercontent.com/u/50144004?v=4" width="100px;" alt=""/><br /><sub><b>Rohan Deb Sarkar</b></sub></a></td>
     <td align="center"><a href="https://amirpourmand.ir"><img src="https://avatars.githubusercontent.com/u/32064808?v=4" width="100px;" alt=""/><br /><sub><b>Amir Pourmand</b></sub></a></td>
   </tr>
-</table>
+</table> -->
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
