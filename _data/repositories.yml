@@ -1,12 +1,12 @@
-github_users:
-  - torvalds
-  - alshedivat
+# github_users:
+#   - torvalds
+#   - alshedivat
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - Pragallva/MJO_waves_mean_flow
+  - Pragallva/Isca_Aquaplanet_experiments
+  - Pragallva/rossby-blocking
+  - Pragallva/Traffic_jam_Blocking
+  - Pragallva/Isca
+  # - jpswalsh/academicons
+  # - mathjax/MathJax

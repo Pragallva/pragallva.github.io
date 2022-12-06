@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: my_profile_pic.jpeg
   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>1350 20th Street, A16</p>
@@ -18,7 +18,15 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
- ... To be updated soon. 
+.... Page under construction ...
+
+I am a postdoctoral research associate jointly affliated with the Cooperative Institute of Environmental Sciences (CIRES) and the National Oceanic Atmospheric Administration (NOAA), Physical Sciences Lab, University of Colorado, Boulder. My general research interests lie in large-scale atmospheric circulation, dynamics of extratropical storm tracks and more recently tropical waves, which I address using a combination of idealized modeling and analyzing reanalysis dataset. 
+
+My current postdoctoral research focuses on tropical-extratropical interaction during Maddel Julian Oscillation. During my PhD in the University of Chicago, I worked with  Drs. Tiffany Shaw and Noboru Nakamura on the dynamics of midlatitude storm tracks. You can find my PhD thesis here. In the first half of my PhD research, I developed a Moist Static energy framework to understand what factors contribute to stormtrack shifts and intensity changes in response to various forcings from seasonal to centennial timescales. Later I used this framework in combination with an aquaplanet and energy balance model to show how surface fluxes modulate the storm track seasonality. In the second half of my PhD, I used the finite amplitude local-wave activity (FAWA) framework (developed by Prof. Nakamura and his group) to understand how atmosphere blocks will change under hypothetical climate change scenarios and how they currently behave during Northern hemisphere winter. 
+
+
+
+<!-- The latter work is in Chapter 4 of my PhD thesis and is being  updated for ERA5 data before we submit it for publication to JAS in the next few weeks. -->
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
