@@ -160,7 +160,5 @@ footer a { color: #ffffff; }
 nav a.active { color: var(--accent); }
 
 ul.codes li { margin-bottom: 16px; }
-.embed { width: min(1100px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); margin-top: 16px; }
-.embed iframe { width: 100%; height: 1500px; border: 1px solid var(--rule); border-radius: 6px; background: #fff; display: block; }
-@media (max-width: 800px) { .embed iframe { height: 1900px; } }
 .funding { font-size: 0.88rem; margin: -4px 0 10px; }
+body { overflow-x: clip; }

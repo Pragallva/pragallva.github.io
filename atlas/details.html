@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas Methods</title>
+<meta name="description" content="Methods and definitions for the Heatwave Box Atlas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root {
+  --bg: #f3f5f7; --panel: #ffffff; --ink: #17212b; --muted: #5b6875; --rule: #d9dfe5; --accent: #0f5e8c;
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #11171d; --panel: #18212a; --ink: #e6ebf0; --muted: #9aa7b4; --rule: #2a3542; --accent: #6db3e0; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #11171d; --panel: #18212a; --ink: #e6ebf0; --muted: #9aa7b4; --rule: #2a3542; --accent: #6db3e0; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.6; }
+main { max-width: 72ch; margin: 0 auto; padding: 32px 16px 56px; }
+a { color: var(--accent); }
+.back { font-size: 15px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-top: 20px; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(28px, 4vw, 38px); line-height: 1.1; margin: 4px 0 8px; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-weight: 700; font-size: 21px; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+b { font-weight: 600; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 15px; width: 100%; background: var(--panel); border: 1px solid var(--rule); }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }
+td:first-child { font-family: var(--f-mono); font-size: 14px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap">
+<style>
+/* Top bar of pragallva.github.io (same look as the other pages). */
+body { margin: 0; }
+.site-nav { position: sticky; top: 0; z-index: 50; background: var(--panel); border-bottom: 1px solid var(--rule);
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 300; }
+.site-nav .in { max-width: 880px; margin: 0 auto; padding: 0 16px; min-height: 56px; display: flex; align-items: center;
+  justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.site-nav a { color: var(--ink); text-decoration: none; }
+.site-nav a:hover, .site-nav a.on { color: #b509ac; }
+:root[data-theme="dark"] .site-nav a:hover, :root[data-theme="dark"] .site-nav a.on { color: #2698ba; }
+.site-nav .brand { font-size: 1.5rem; white-space: nowrap; }
+.site-nav ul { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 13px; margin: 0; padding: 0; list-style: none; }
+.site-nav ul a { font-size: 0.98rem; white-space: nowrap; }
+.site-nav button { background: none; border: 0; padding: 4px; cursor: pointer; color: var(--ink); display: inline-flex; }
+.site-nav svg { width: 18px; height: 18px; fill: currentColor; }
+@media (max-width: 900px) { .site-nav .in { justify-content: center; padding: 8px 16px; }
+  .site-nav .brand { width: 100%; text-align: center; } .site-nav ul { justify-content: center; } }
+.site-intro { max-width: 900px; margin: 6px 0 0; font-size: 16px; }
+.site-soon { color: #b509ac; }
+</style>
+<script>
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="site-nav"><div class="in">
+    <a class="brand" href="../index.html">Pragallva Barpanda</a>
+    <ul>
+      <li><a href="../index.html">Homepage</a></li>
+      <li><a href="../index.html#news">News</a></li>
+      <li><a href="../index.html#career">Career</a></li>
+      <li><a href="../index.html#publications">Publications</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a class="on" href="index.html">Heatwave Atlas</a></li>
+      <li><a href="../codes.html">Code</a></li>
+      <li><button id="site-theme" aria-label="Switch light/dark mode" title="Switch light/dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button></li>
+    </ul>
+</div></div>
+<main>
+  <a class="back" href="index.html">← Back to the atlas</a>
+  <div class="eyebrow">MPI-ESM1.2-LR · 5 members · historical + SSP3-7.0 · JJA</div>
+  <h1>Methods and definitions</h1>
+  <p>The atlas shows blocking-driven summer heatwaves in 18 regions of the Northern Hemisphere. They come from the MPI Grand Ensemble (MPI-ESM1.2-LR), members 1–5, historical (1850–2014) and SSP3-7.0 (2015–2100), June–August.</p>
+
+  <h2>Using the atlas</h2>
+  <p>Click a box on the map, or its code in the list, to see its figure. The <b>Heatwaves</b> view shows four panels: heatwave days per decade, the fraction of heatwave days in each surface-flux regime, heatwave surface temperature by regime, and the local wave activity of the heatwaves. The <b>LWA distribution</b> view shows the probability density of daily summer LWA at the box's grid points. The sidebar gives the number of heatwaves and heatwave days in the box, and the heatwave days per decade in each period, and two bars with the share of heatwave days in each surface-flux regime: historical (1850s–2010s) and SSP3-7.0 (2020s–2090s).</p>
+
+  <h2>Regions</h2>
+  <p>Each continent is split into a West and an East half and three latitude bands: southern (S), central (C) and northern (N). The boxes are clipped to land using Natural Earth 1:110m country outlines. A heatwave belongs to a box when its centroid falls inside it.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Codes</th><th>Continent</th><th>West / East split</th><th>Latitude bands</th></tr></thead>
+    <tbody>
+      <tr><td>NA-…</td><td>North America (without Greenland)</td><td>100°W</td><td>38–48, 48–58, 58–85°N</td></tr>
+      <tr><td>EU-…</td><td>Europe, 25°W–45°E</td><td>15°E</td><td>38–48, 48–58, 58–72°N</td></tr>
+      <tr><td>AS-…</td><td>Asia, including Russia east of 45°E</td><td>100°E (Asia West covers 0–100°E)</td><td>38–48, 48–58, 58–80°N</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Heatwave days</h2>
+  <p>A heatwave's days are its persistence: the number of days with T &gt; T<sub>P90</sub> at a grid point in the heatwave core, within ±10 days around the block peak. Heatwave days in a box are the sum over its heatwaves, all 5 members together. The sidebar's days per decade are averages over the 1850s–2010s (historical) and the 2020s–2090s (SSP3-7.0).</p>
+
+  <h2>Panels of the Heatwaves figure</h2>
+  <ul>
+    <li><b>(a) Heatwave days per decade</b>, the total over all 5 members. The trend lines are one joined (continuous piecewise-linear) least-squares fit to the decadal values. The historical and SSP3-7.0 segments meet at the 2010s, the transition decade (2015). The dashed line marks 2015, the start of SSP3-7.0.</li>
+    <li><b>(b) Fraction of heatwave days by regime</b>, 5 members pooled. The regimes are energy-limited, transitional, moisture-limited and atmosphere-to-surface heating.</li>
+    <li><b>(c) Heatwave surface temperature by regime.</b> This is the radiative skin temperature T<sub>s</sub> = [(rlus − (1 − ε) rlds) / (εσ)]<sup>1/4</sup>, with ε = 0.996, from daily upward and downward longwave flux. It is averaged over a ±10° box around the heatwave centroid and days −3 to +3. Each line is the mean of a regime's heatwaves within ±10 years (at least 1 event), with shading of ±1 standard error.</li>
+    <li><b>(d) Local wave activity (LWA)</b>, averaged over 5–10 km height, the LWA composite box around the event and days −3 to +3. The line is the mean of all heatwaves in the box (all regimes) within ±10 years, with shading of ±1 standard error.</li>
+  </ul>
+  <p>Panels (c) and (d) show only these running means, with the y-axis fitted to them in each box.</p>
+
+  <h2>LWA distribution</h2>
+  <p>This is daily LWA averaged over 5–10 km height at every grid point (1.875°) whose centre lies in the box, June–August, members 1–5. It is area-weighted (cos latitude) and uses 0.5 m s<sup>−1</sup> bins. The curves show all years (1850–2100), historical (1850–2014) and SSP3-7.0 (2015–2100). Vertical lines mark 65 m s<sup>−1</sup>, the blocking threshold, and the box's 88th percentile over all years.</p>
+</main>
+<!-- Visitor counts: https://pia-basanti.goatcounter.com (no cookies) -->
+<script data-goatcounter="https://pia-basanti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  document.getElementById("site-theme").addEventListener("click", function () {
+    var root = document.documentElement;
+    var dark = root.dataset.theme ? root.dataset.theme === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+</script>
+</body>
+</html>
