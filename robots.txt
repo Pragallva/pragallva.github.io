@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pragallva.github.io/sitemap.xml

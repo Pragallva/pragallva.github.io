@@ -81,6 +81,11 @@ def patch(name, intro=False):
     s = open(os.path.join(SRC, name)).read()
     s = s.replace("</head>", HEAD, 1).replace("<body>", nav(), 1).replace("</body>", TOGGLE, 1)
     s = s.replace("<title>Heatwave Box Atlas", "<title>Heatwave Atlas · Pragallva Barpanda", 1)
+    s = s.replace("<head>", f'<head>\n<link rel="canonical" href="https://pragallva.github.io/atlas/{name}">', 1)
+    if intro:
+        s = s.replace('content="Blocking-driven heatwaves in 18 Northern Hemisphere regions, MPI-ESM1.2-LR, historical + SSP3-7.0."',
+                      'content="Heatwave Box Atlas by Pragallva Barpanda: an interactive atlas of blocking-driven summer heatwaves '
+                      'in 18 Northern Hemisphere regions and how they change in a warmer world (MPI Grand Ensemble, SSP3-7.0)."', 1)
     if intro:
         s = re.sub(r'(<a class="more" href="details.html">[^<]*</a>)', lambda m: m.group(1) + INTRO, s, count=1)
     open(os.path.join(DST, name), "w").write(s)
