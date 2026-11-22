@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Pragallva Barpanda</title>
+<meta name="description" content="Pragallva Barpanda, atmospheric scientist: atmospheric blocking, heatwaves, storm tracks and tropical–extratropical interaction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Remember the light/dark choice made with the moon button.
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Pragallva Barpanda</a>
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="index.html#news">News</a></li>
+      <li><a href="index.html#career">Career</a></li>
+      <li><a href="index.html#publications">Publications</a></li>
+      <li><a class="active" href="projects.html">Projects</a></li>
+      <li><a href="atlas.html">Heatwave Atlas</a></li>
+      <li><a href="codes.html">Code</a></li>
+      <li><button id="theme" aria-label="Switch light/dark mode" title="Switch light/dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <h2 id="projects">Projects</h2>
+  <!-- Each project: one question, a 1–2 line answer, one animation (img/projects/) and its paper. -->
+
+  <div class="matrix">
+
+  <div class="project">
+    <h3>Extratropical storm tracks</h3>
+    <p class="q">What controls the intensity of the storm tracks through the seasons?</p>
+    <figure class="anim">
+      <img src="img/projects/storm_tracks_MSE_TE_seasonal.gif" alt="Monthly poleward energy transport by storm tracks" loading="lazy">
+      <figcaption>Month-by-month poleward transport of moist static energy by transient eddies (storm tracks). Positive (warm colours) is northward, negative (cool colours) is southward.</figcaption>
+    </figure>
+    <h4>Papers</h4>
+    <ol class="papers">
+        <li>Using the moist static energy budget to understand storm-track shifts across a range of time scales <span class="note">(J. Atmos. Sci., 2017)</span> <a class="btn" href="https://doi.org/10.1175/JAS-D-17-0022.1" target="_blank" rel="noopener">Paper</a></li>
+        <li>A moist static energy framework for zonal-mean storm-track intensity <span class="note">(J. Atmos. Sci., 2018)</span> <a class="btn" href="https://doi.org/10.1175/JAS-D-17-0183.1" target="_blank" rel="noopener">Paper</a></li>
+        <li>Surface fluxes modulate the seasonality of zonal-mean storm tracks <span class="note">(J. Atmos. Sci., 2020)</span> <a class="btn" href="https://doi.org/10.1175/JAS-D-19-0139.1" target="_blank" rel="noopener">Paper</a></li>
+        <li>What controls the seasonality of poleward energy transport by intense extratropical cyclones? <span class="note">(J. Geophys. Res. Atmos., 2026)</span> <a class="btn" href="https://doi.org/10.1029/2026JD047802" target="_blank" rel="noopener">Paper</a></li>
+    </ol>
+  </div>
+
+  <div class="project">
+    <h3>Tropical waves</h3>
+    <p class="q">How do subtropical Rossby waves amplify the circulation of the Madden–Julian Oscillation?</p>
+    <figure class="anim">
+      <img src="img/projects/mjo_intraseasonal_winds.gif" alt="Intraseasonal 200 hPa winds through the MJO phases" loading="lazy">
+      <figcaption>Intraseasonal winds at 200 hPa (arrows) through the eight MJO phases; contours show the MJO (OMI index).</figcaption>
+    </figure>
+    <h4>Papers</h4>
+    <ol class="papers">
+        <li>The role of subtropical Rossby waves in amplifying the divergent circulation of the Madden–Julian Oscillation <span class="note">(J. Atmos. Sci., 2023)</span> <a class="btn" href="https://doi.org/10.1175/JAS-D-22-0259.1" target="_blank" rel="noopener">Paper</a></li>
+        <li>A conceptual model to demonstrate equatorial Rossby-gravity wave instabilities under meridional wind shear <span class="note">(<span class="upcoming">upcoming</span>, in preparation)</span></li>
+    </ol>
+  </div>
+
+  <div class="project">
+    <h3>Midlatitude blocking</h3>
+    <p class="q">What causes atmospheric blocks?</p>
+    <figure class="anim">
+      <img src="img/projects/blocking_growth_decay.gif" alt="Growth and decay of winter-time atmospheric blocks" loading="lazy">
+      <figcaption>Growth and decay of a composite winter-time block: wave activity, 300 hPa geopotential height and wind reversal.</figcaption>
+    </figure>
+    <h4>Papers</h4>
+    <ol class="papers">
+        <li>Blocking statistics in a varying climate: lessons from a “traffic jam” model with pseudostochastic forcing <span class="note">(J. Atmos. Sci., 2019)</span> <a class="btn" href="https://doi.org/10.1175/JAS-D-19-0095.1" target="_blank" rel="noopener">Paper</a></li>
+        <li>Local wave activity analysis of atmospheric blocks in the Northern Hemisphere winter <span class="note">(J. Climate, 2025)</span> <a class="btn" href="https://doi.org/10.1175/JCLI-D-24-0232.1" target="_blank" rel="noopener">Paper</a></li>
+    </ol>
+  </div>
+
+  <div class="project">
+    <h3>Extreme events</h3>
+    <p class="note funding">Funded by the Marie Skłodowska-Curie Actions (MSCA), Horizon Europe, grant no. <a href="https://cordis.europa.eu/project/id/101110631" target="_blank" rel="noopener">101110631</a>.</p>
+    <p class="q">How will blocking-driven heatwaves change in a warmer world?</p>
+    <figure class="anim">
+      <a href="https://pragallva.github.io/heatwave-box-atlas/" target="_blank" rel="noopener"><img src="img/projects/heatwave_atlas_preview.png" alt="Heatwave Box Atlas map" loading="lazy"></a>
+      <figcaption>The 18 Northern Hemisphere regions of the <a href="https://pragallva.github.io/heatwave-box-atlas/" target="_blank" rel="noopener">Heatwave Box Atlas</a> (click the map to open the interactive atlas).</figcaption>
+    </figure>
+    <h4>Papers</h4>
+    <ol class="papers">
+        <li>Surface impacts of dynamically-driven heatwaves <span class="note">(<span class="upcoming">upcoming</span>, submitted)</span></li>
+        <li>Projected future changes in atmospheric blocking and subtropical ridges and their link to European heatwaves in two SMILEs <span class="note">(<span class="upcoming">upcoming</span>, submitted)</span></li>
+        <li>The dynamics of extreme wave-activity events in a warming climate <span class="note">(<span class="upcoming">upcoming</span>, in preparation)</span></li>
+    </ol>
+  </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Pragallva Barpanda. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+    <span id="updated"></span></div>
+</footer>
+
+<script>
+  document.getElementById("theme").addEventListener("click", function () {
+    var root = document.documentElement;
+    var dark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+</script>
+<script>
+  // "Last updated": the date this page was last changed (from the server's Last-Modified time).
+  (function () {
+    var d = new Date(document.lastModified);
+    if (!isNaN(d)) document.getElementById("updated").textContent =
+      "Last updated: " + d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) + ".";
+  })();
+</script>
+<!-- Visitor counts: https://pia-basanti.goatcounter.com (no cookies) -->
+<script data-goatcounter="https://pia-basanti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
